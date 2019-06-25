@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: large;
+    }
+    .container {
+        text-align: center;
+    }
+    ul {
+        text-align: center;
+        list-style: inside;
+    }
+
+    button {
+        background: white;
+        border: 2px solid #4CAF50;
+    }
+
+    button:hover {
+        background: black;
+        border: 2px solid ;
+        border-radius: 2px;
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <header><h2>Phonebook</h2></header>
+
+        First name:<br>
+        <input id="name" type="text" placeholder="Enter name" value=""> <br>
+        Phone:<br>
+        <input id="number" type="number" placeholder="Enter phone number" value="">
+        <br>
+        <br>
+        <button type="submit">Add</button>
+
+        <ul id="list"></ul>
+      </div>
+
+      <script src="phonebook.js" charset="utf-8"></script>
+      <script src="phonebook.dom.js" charset="utf-8"></script>
+</body>
+</html>
