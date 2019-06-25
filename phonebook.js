@@ -1,5 +1,5 @@
 function PhoneBook() {
-    let userList = []
+    const userList = []
     const addNumber = (name, number) => {
         if(name && number) {
             userList.push({ name, number})

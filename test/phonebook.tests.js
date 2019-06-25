@@ -6,6 +6,16 @@ describe("The phonebook", function(){
 		assert.equal("082 123 4500", phoneBook.getNumber("Linda"));
 	});
 
+	it("should not add duplicate users", function() {
+		const phoneBook = PhoneBook();
+		phoneBook.addNumber("Linda", "082 123 4500");
+		phoneBook.addNumber("Linda", "082 123 4522");
+		
+		assert.equal(1, userList.length);
+		assert.equal("082 123 4500", phoneBook.getNumber("Linda"));
+
+	});
+
 	it("should be able to add more than one user", function() {
 		const phoneBook = PhoneBook();
 		phoneBook.addNumber("Linda", "082 123 4500");
@@ -21,5 +31,5 @@ describe("The phonebook", function(){
 		assert.equal("083 123 3667", userList[1].number);
 
 	});
-	
+
 });

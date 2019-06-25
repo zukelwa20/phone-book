@@ -1,6 +1,6 @@
 var nameElement = document.querySelector("#name");
 var numberElement = document.querySelector("#number");
-var ul = document.getElementById("list");
+var ul = document.querySelector(".list");
 var button = document.querySelector('button');
 
 const phoneBook = PhoneBook();
