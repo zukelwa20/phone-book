@@ -13,10 +13,6 @@ function PhoneBook() {
           }).number;         
     }
 
-    function getNumbers() {
-        return userList;
-    }
-
     return {
         addNumber,
         getNumber,
